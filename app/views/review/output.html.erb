@@ -1,0 +1,51 @@
+<html>
+
+<table border=1>
+<tr>
+  <td>Summary</td>
+  <td>Percentage</td>
+</tr>
+<tr>
+  <td bgcolor='#00FFFF'>Positive Tweets</td>
+  <td> <%= (@positive_responses.length/@total_responses_length.to_f) * 100 %></td>
+</tr>
+
+<tr>
+  <td bgcolor='#FFAA70'>Negative Tweets</td>
+  <td> <%= (@negative_responses.length/@total_responses_length.to_f) * 100 %></td>
+</tr>
+
+<tr>
+  <td bgcolor='#FFFFCC'>Neutral Tweets</td>
+  <td> <%= (@neutral_responses.length/@total_responses_length.to_f) * 100 %></td>
+</tr>
+
+
+</table>
+
+
+<table border=1>
+<% @positive_responses.each do |response, color_code| %>
+  <tr bgcolor=<%= color_code %>>
+    <td><%= response %></td>
+  </tr>
+<% end %>
+</table>
+
+<table border=1>
+<% @negative_responses.each do |response, color_code| %>
+  <tr bgcolor=<%= color_code %>>
+    <td><%= response %></td>
+  </tr>
+<% end %>
+</table>
+
+<table border=1>
+<% @neutral_responses.each do |response, color_code| %>
+  <tr bgcolor=<%= color_code %>>
+    <td><%= response %></td>
+  </tr>
+<% end %>
+</table>
+
+</html>

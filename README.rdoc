@@ -1,0 +1,35 @@
+== Welcome to Twitter Sentiment Analysis
+
+Twitter Setiment Analysis is a web-application which classifies tweets of given query 
+into three categories namely positive,negative and neutral tweets respectively and gives
+overall percentages of positve,negative and neutral tweets respectively. 
+
+Positive Tweets - Tweets which have positive response with respect to given query.
+
+Negative Tweets - Tweets which have negative response with respect to given query.
+
+Neutral Tweets - Tweets which have neutral response with respect to given query.
+
+'sentimentalizer' gem is used to find the mood (sentiment) of the given tweet.
+
+For more information on 'sentimentalizer' search in http://rubygems.org.
+
+== Getting Started
+
+After Checking out this code do the following steps
+
+1. Change directory to <tt>twitter_sentiment_analysis</tt>:
+       <tt>cd twitter_sentiment_analysis</tt> 
+
+2. At the command prompt, inside this application:
+       <tt>bundle install</tt>
+       <tt>rails g sentimentalizer</tt> (This trains the 'sentimentalizer' model with the initial data.)
+
+3. Start the web server:
+       <tt>rails server</tt> (run with --help for options)
+
+4. Go to http://localhost:3000/reviews and you'll see:
+       "Enter Query: <text box>"
+
+Just enter the topic which you want to test and enjoy..!! 
+
