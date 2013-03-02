@@ -18,15 +18,15 @@ For more information on 'sentimentalizer' search in http://rubygems.org.
 
 After Checking out this code do the following steps
 
-1. Change directory to <tt>twitter_sentiment_analysis</tt>:
-       <tt>cd twitter_sentiment_analysis</tt> 
+1. Change directory to twitter_sentiment_analysis:
+       cd twitter_sentiment_analysis 
 
 2. At the command prompt, inside this application:
-       <tt>bundle install</tt>
-       <tt>rails g sentimentalizer</tt> (This trains the 'sentimentalizer' model with the initial data.)
+       bundle install
+       rails g sentimentalizer (This trains the 'sentimentalizer' model with the initial data.)
 
 3. Start the web server:
-       <tt>rails server</tt> (run with --help for options)
+       rails server (run with --help for options)
 
 4. Go to http://localhost:3000/reviews and you'll see:
        "Enter Query: <text box>"
