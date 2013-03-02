@@ -31,5 +31,10 @@ After Checking out this code do the following steps
 4. Go to http://localhost:3000/reviews and you'll see:
        "Enter Query: <text box>"
 
+5. Searching for positive and negative tweets for India vs Australia cricket match by entering "IndVsAus" in text box. 
+       Ex : "Enter Query : IndVsAus"         
+
+
+
 Just enter the topic which you want to test and enjoy..!! 
 
